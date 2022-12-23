@@ -4,7 +4,7 @@ NB. and applying ],_2&(+/@:{.) recursively starting with 1 1
 NB. The fun thing is the ^:()^: thing, which applies the verb
 NB. recursively until the condition y >: {: returns false
 NB. old attempt: fibs =: verb : '((], _2&(+/@:{.) )^:y) 1 1'
-fibs =: verb : '((], _2&(+/@:{.) )^:(y >: {:)^:_) 1 1'
+fibs =: verb : '}: ((], _2&(+/@:{.) )^:(y >: {:)^:_) 1 1'
 
 NB. fibs 4000000 builds a list of the fibonacci numbers less or equal
 NB. than 4000000
